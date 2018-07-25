@@ -1,0 +1,1 @@
+# predictive_model_MoWS2_alloy
