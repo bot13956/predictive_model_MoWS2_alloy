@@ -1,0 +1,17 @@
+#PBS -N MoWS2_BS 
+#PBS -M benjaminobi@gmail.com
+#PBS -m aeb
+#PBS -q regular
+#PBS -l mppwidth=16
+#PBS -l walltime=30:00:00
+#PBS -j oe
+#PBS -V 
+
+cd $PBS_O_WORKDIR
+module load espresso
+
+aprun -n 16 pw.x < scf.in > scf.out
+echo "done with scf, proceeding to band structure"
+aprun -n 16 pw.x < bands.in > bands.out
+aprun -n 16 bands.x < bands_plot.in > bands_plot.out
+echo "done"
