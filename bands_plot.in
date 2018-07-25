@@ -1,0 +1,6 @@
+&bands
+    prefix='cc'
+    outdir='/global/project/projectdirs/m2174/EXCITON/SCRATCH/espresso/Rel_MoWS2'
+    filband = 'cc_bands.dat'
+    no_overlap = .true.
+/
