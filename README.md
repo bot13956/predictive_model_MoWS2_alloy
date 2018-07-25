@@ -15,3 +15,5 @@ bands.in: performs band structure calculation after self-consistent field calcul
 bands_plot.in: re-arranges band structure data in a format that projects two-dimensional band structure into a one-dimensional plot along high symmetry lines in the Brilluoin zone.
 
 batch_script.pbs: batch script for batch scheduling and allocating of computer resources.
+
+output.pdf: shows the structure of the MoWS2 alloy and useful outputs such as band structure plots and energy band gap.
