@@ -1,0 +1,59 @@
+&control
+    restart_mode='from_scratch'
+    wf_collect = .false.
+    prefix='cc'
+    pseudo_dir =
+    '/global/project/projectdirs/m2174/EXCITON/SCRATCH/espresso/Rel_MoWS2/SuperMoS2'
+   
+outdir='/global/project/projectdirs/m2174/EXCITON/SCRATCH/espresso/Rel_MoWS2/SuperMoS2'
+    tprnfor = .true.
+    tstress = .true.
+    calculation = 'scf'
+    title = 'WS2-hex'
+/
+&system
+    ecutwfc = 150.0
+    ecutrho = 600.0
+    occupations = 'smearing'
+    degauss = 0.005
+    ibrav = 4
+    celldm(1) = 12.06
+    celldm(3) = 3.175
+    nat = 12
+    ntyp = 2
+    lspinorb = .true.
+    noncolin = .true.
+    
+/
+&electrons
+    diagonalization = 'david'
+    diago_david_ndim = 4
+    diago_full_acc = .true.
+    electron_maxstep = 500
+    mixing_beta = 0.05
+    conv_thr = 1.0d-5
+ /
+&ions
+ &ion_dynamics = 'bfgs'
+ /
+&cell
+ /
+ATOMIC_SPECIES
+Mo  95.94  Mo.rel-pw91-spn-rrkjus_psl.0.3.0.UPF
+S   32.07  S.rel-pw91-n-rrkjus_psl.0.1.UPF
+ATOMIC_POSITIONS crystal
+Mo 0.167 0.333 0.250
+Mo 0.167 0.833 0.250
+Mo 0.667 0.333 0.250
+Mo 0.667 0.833 0.250
+S  0.333 0.167 0.171
+S  0.333 0.167 0.329
+S  0.333 0.667 0.171
+S  0.333 0.667 0.329
+S  0.833 0.167 0.171
+S  0.833 0.167 0.329
+S  0.833 0.667 0.171
+S  0.833 0.667 0.329
+K_POINTS automatic
+5 5 1 0 0 0
+  
