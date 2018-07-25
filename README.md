@@ -1,6 +1,6 @@
 # predictive_model_MoWS2_alloy
 
-This code performs first-principle calculations for the MoWS2 alloy at fixed geometry. The geometry parameters like bond lengths and lattice constants are obtained experimentally. A self-consistent calculation is performed using atomic pseudopotential to obtained converged electron density, which is then use to calculate the quantum energy levels of the system. A band structure calculation is performed at the end of the self-consistent field calculation in order to predict important optoelectronic parameters such as energy band gap and electron/hole effective masses. All calculations are perfomed using the Quantum Espresso DFT Solver. For more information, see the following link: https://www.quantum-espresso.org/
+This code performs first-principle calculations for the MoWS2 alloy at fixed geometry. The geometry parameters like bond lengths and lattice constants are obtained experimentally. A self-consistent calculation is performed using atomic pseudopotentials to obtain the converged electron density, which is then used to calculate the quantum energy levels of the system. A band structure calculation is performed at the end of the self-consistent field calculation in order to predict important optoelectronic parameters such as energy band gap and electron/hole effective masses. All calculations are perfomed using the Quantum Espresso DFT Solver. For more information, see the following link: https://www.quantum-espresso.org/
 
 Mo.rel-pw91-spn-rrkjus_psl.0.3.0.UPF: atomic pseudopotential file for Molybdenum.
 
